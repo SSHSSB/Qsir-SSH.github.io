@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/123155939?v=4"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="# 1. IDE的选择
+现在有许多IDE供我们选择，比如Microsoft的Visual Studio和VS code，Jetbrains的Clion，DEV C++等，但因为VS code配置麻烦，Clion收费，DEV过于老旧等原因，所以我建议新手选择的C++ IDE是Visual Studio社区版。">
+<meta property="og:title" content="C++教程2：IDE的选择、安装和使用。">
+<meta property="og:description" content="# 1. IDE的选择
+现在有许多IDE供我们选择，比如Microsoft的Visual Studio和VS code，Jetbrains的Clion，DEV C++等，但因为VS code配置麻烦，Clion收费，DEV过于老旧等原因，所以我建议新手选择的C++ IDE是Visual Studio社区版。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://SSHSSB.github.io/Qsir-SSH.github.io/post/C%2B%2B-jiao-cheng-2%EF%BC%9AIDE-de-xuan-ze-%E3%80%81-an-zhuang-he-shi-yong-%E3%80%82.html">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/123155939?v=4">
+<title>C++教程2：IDE的选择、安装和使用。</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">C++教程2：IDE的选择、安装和使用。</h1>
+<div class="title-right">
+    <a href="https://SSHSSB.github.io/Qsir-SSH.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/SSHSSB/Qsir-SSH.github.io/issues/3" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><h1>1. IDE的选择</h1>
+<p>现在有许多IDE供我们选择，比如Microsoft的Visual Studio和VS code，Jetbrains的Clion，DEV C++等，但因为VS code配置麻烦，Clion收费，DEV过于老旧等原因，所以我建议新手选择的C++ IDE是Visual Studio社区版。</p>
+<h1>2. IDE的安装</h1>
+<h2>2.1 下载</h2>
+<p>这是下载链接：<a href="url">https://visualstudio.microsoft.com/zh-hans/downloads/</a> 。进入后我们选择第一项，下载社区版。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/2ce92ba6-c9c6-4e17-ad1a-43fa638a1272"><img width="784" alt="Snipaste_2024-08-29_16-51-08" src="https://github.com/user-attachments/assets/2ce92ba6-c9c6-4e17-ad1a-43fa638a1272" style="max-width: 100%;"></a><br>
+下载下来之后，你会得到这样的一个exe文件：<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/27d47481-7127-4c9a-9003-9b3eb6e83172"><img width="461" alt="1" src="https://github.com/user-attachments/assets/27d47481-7127-4c9a-9003-9b3eb6e83172" style="max-width: 100%;"></a><br>
+然后双击安装就可以了。</p>
+<h2>2.2 安装</h2>
+<p>看到这个界面后：<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/209a3552-597c-45dc-ab8d-bc895ebf9e4f"><img width="394" alt="3" src="https://github.com/user-attachments/assets/209a3552-597c-45dc-ab8d-bc895ebf9e4f" style="max-width: 100%;"></a><br>
+点击继续。<br>
+看到这个界面后：<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/8747ae8b-aa86-4451-a1d8-41b182893673"><img width="396" alt="6" src="https://github.com/user-attachments/assets/8747ae8b-aa86-4451-a1d8-41b182893673" style="max-width: 100%;"></a><br>
+就代表开始安装了，这个过程一定要确保网络是正常的！！！<br>
+接下来，如果是Windows11系统，点这几个：<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/d9049fbb-6ebe-483c-b800-18cebe7a68aa"><img width="539" alt="0" src="https://github.com/user-attachments/assets/d9049fbb-6ebe-483c-b800-18cebe7a68aa" style="max-width: 100%;"></a><br>
+如果是Windows10系统，点这几个：<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/5010470b-4e15-4df9-ae40-d6df350893d1"><img width="521" alt="7" src="https://github.com/user-attachments/assets/5010470b-4e15-4df9-ae40-d6df350893d1" style="max-width: 100%;"></a><br>
+我建议把安装路径改一下：<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/34e64040-b417-4d58-a11a-2f0c9da958d1"><img width="521" alt="06" src="https://github.com/user-attachments/assets/34e64040-b417-4d58-a11a-2f0c9da958d1" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/c29543c9-e566-4d62-abe9-a053ceb809f7"><img width="522" alt="56" src="https://github.com/user-attachments/assets/c29543c9-e566-4d62-abe9-a053ceb809f7" style="max-width: 100%;"></a><br>
+接下来会进⼊下载和安装的过程，如下图，请耐心等待：<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/24264c82-ebf6-4522-9cf4-54836730ae9a"><img width="538" alt="Snipaste_2024-08-29_17-16-03" src="https://github.com/user-attachments/assets/24264c82-ebf6-4522-9cf4-54836730ae9a" style="max-width: 100%;"></a><br>
+然后点击确定：<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/271418df-07e0-442e-ab14-f96c8a980539"><img width="539" alt="15" src="https://github.com/user-attachments/assets/271418df-07e0-442e-ab14-f96c8a980539" style="max-width: 100%;"></a></p>
+<h2>2.3 启动</h2>
+<p>出现这张图后：<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/622d759a-a016-4a8f-8e7d-93781c6c4cb7"><img width="538" alt="44" src="https://github.com/user-attachments/assets/622d759a-a016-4a8f-8e7d-93781c6c4cb7" style="max-width: 100%;"></a><br>
+点击启动。<br>
+会出现这个界⾯：<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/374c95a9-eeac-4068-9661-7e23b9056d12"><img width="538" alt="23" src="https://github.com/user-attachments/assets/374c95a9-eeac-4068-9661-7e23b9056d12" style="max-width: 100%;"></a><br>
+启动成功啦！！<br>
+接下来根据软件走即可。</p>
+<h1>3.  IDE的使⽤</h1>
+<h2>3.1 项⽬创建</h2>
+<p>• 创建空项⽬（如果没看到空项⽬，说明你安装错了）<br>
+• 项⽬名称尽量不要使⽤中⽂，不要有特殊字符，不要有空格<br>
+• 项⽬指定⼀个合适的路径，存放你⾃⼰的代码</p>
+<h2>3.2 创建源⽂件</h2>
+<p>• C语⾔代码的后缀是.c⽂件，后缀是.cpp，是C plus plus，是C++的代码<br>
+• 我们学习C++，⽂件的后缀就改成.cpp</p>
+<h2>3.3 写代码</h2>
+<p>• 按照C++语法写代码就⾏</p>
+<h2>3.4 运⾏代码</h2>
+<p>• 代码写完后，按ctrl+F5运⾏代码</p></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://SSHSSB.github.io/Qsir-SSH.github.io">Qsir's Blog</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if(""!=""){
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","SSHSSB/Qsir-SSH.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+
+
+</script>
+
+
+</html>
