@@ -89,12 +89,12 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p>现在网络上大部分C语言或C++的教程，一般第一课是用printf语句来教学输出，但我认为这样是不妥的，因为printf语句很复杂，输出不同类型的内容要使用不同的参数，对于初学者来说不是很友好，所以我会通过<code class="notranslate">&lt;iostream&gt;</code>库的<code class="notranslate">cout</code>语句来教会大家如何输出。</p>
 <h1>2. 教学（编写程序必须使用英文输入法！！！）</h1>
 <h2>2.1 必备内容</h2>
-<div class="highlight highlight-source-c++"><pre class="notranslate">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>iostream<span class="pl-pds">&gt;</span></span> ### ### ### <span class="pl-c"><span class="pl-c">//</span>这一行就是使用&lt;iostream&gt;库，即标准输入输出库（输入后面我也会告诉大家）。</span>
-<span class="pl-k">using</span> <span class="pl-k">namespace</span> <span class="pl-en">std</span><span class="pl-k">;</span>  <span class="pl-c"><span class="pl-c">//</span>这一行是使用一个命名空间 std，即标准命名空间。</span>
-<span class="pl-k">int</span> <span class="pl-en">main</span>() <span class="pl-c"><span class="pl-c">//</span>这是一个主函数，一段程序里只能有一个主函数。</span>
+<div class="highlight highlight-source-c++"><pre class="notranslate">#include &lt;iostream&gt; ### ### ### //这一行就是使用&lt;iostream&gt;库，即标准输入输出库（输入后面我也会告诉大家）。
+<span class="pl-k">using</span> <span class="pl-k">namespace</span> std;  //这一行是使用一个命名空间 std，即标准命名空间。
+int main() //这是一个主函数，一段程序里只能有一个主函数。
 {
 
-    <span class="pl-k">return</span> <span class="pl-c1">0</span>;  <span class="pl-c"><span class="pl-c">//</span>0是返回值。在大括号里的内容要缩进四个空格。</span>
+    return 0;  //0是返回值。在大括号里的内容要缩进四个空格。
 }</pre></div>
 <p>（"// " 后面的内容是注释，程序运行时是不会执行的，在编程时我们要养成写简明而又内容明确注释的良好习惯。）<br>
 好了，这就是我们目前所学的C++程序的必须内容，作为初学者的我们其实每一个部分都不用深究，这个部分是我们一定要记住的。</p>
@@ -108,19 +108,19 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 内容）<br>
 ）<br>
 给大家一个样例：</p>
-<div class="highlight highlight-source-c++"><pre class="notranslate">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>iostream<span class="pl-pds">&gt;</span></span>
-<span class="pl-k">using</span> <span class="pl-k">namespace</span> <span class="pl-en">std</span><span class="pl-k">;</span>  
-<span class="pl-k">int</span> <span class="pl-en">main</span>() 
+<div class="highlight highlight-source-c++"><pre class="notranslate">#include &lt;iostream&gt;
+<span class="pl-k">using</span> <span class="pl-k">namespace</span> std;  
+int main() 
 {
-    cout &lt;&lt; <span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>;
-    cout &lt;&lt; <span class="pl-s"><span class="pl-pds">"</span>你好<span class="pl-pds">"</span></span>;
-    cout &lt;&lt; <span class="pl-c1">4</span>+<span class="pl-c1">4</span>;
-    cout  &lt;&lt;<span class="pl-c1">5</span>;
-    cout &lt;&lt; <span class="pl-s"><span class="pl-pds">"</span>大家<span class="pl-pds">"</span></span>  &lt;&lt; endl &lt;&lt; <span class="pl-s"><span class="pl-pds">"</span>好<span class="pl-pds">"</span></span>;
-    <span class="pl-k">return</span> <span class="pl-c1">0</span>;  
+    cout &lt;&lt; "abc";
+    cout &lt;&lt; "你好";
+    cout &lt;&lt; 4+4;
+    cout  &lt;&lt;5;
+    cout &lt;&lt; "大家"  &lt;&lt; endl &lt;&lt; "好";
+    return 0;  
 }</pre></div>
 <p>输出应为：</p>
-<div class="highlight highlight-source-c++"><pre class="notranslate">abc你好<span class="pl-c1">85</span>大家
+<div class="highlight highlight-source-c++"><pre class="notranslate">abc你好85大家
 好</pre></div>
 <h1>3. 总结</h1>
 <p>使用C++输出不是很难，大家可以试一试，大家去尝试一下输出“Hello World”吧。😁<br>
